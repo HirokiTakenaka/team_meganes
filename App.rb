@@ -6,18 +6,19 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
-before do
+#before do
 #サンプル
 # @profile_link = :'/user/profile'
 
 #今回仕様
-@profile_link = :'http://'
+#@profile_link = :'http://'
 
-end
+#end
 
 get '/' do
     #★ここにindexファイルを指定する
- print './index.html'
+ # print './index.html'
+ File.read('index.html')
 end
 
 
