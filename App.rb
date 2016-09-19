@@ -17,6 +17,7 @@ end
 
 get '/' do
     #★ここにindexファイルを指定する
+ print './index.html'
 end
 
 
